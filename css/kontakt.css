@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-image: url(../Images/pozadina.jpg);
+    background-size: 50%;
+    background-position: left;
+    color: white;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+
+}
+
+.lp{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.logo{
+    display: inline;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 200px;
+    border-radius: 50px;
+}
+
+.poruka{
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.burger{
+    text-align: left;
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: 40px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+.menu{
+    display: inline;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menu ul li{
+    padding: 10px;
+    display: inline;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu ul li:hover{
+    background-color: rgb(93, 224, 126);
+}
+.grid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.kontakt{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.kontakt h1{
+    margin-bottom: 20px;
+}
+
+.upit{
+    margin: 0 auto;
+    margin-left: 80px;
+    text-align: left;
+    background-size: 50%;
+    background-position: center;
+}
+
+.upit button{
+    margin: 10px 40px 20px 0;
+    padding: 5px 10px;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    background-image: url(../Images/pozadina.jpg);
+    background-size: 50%;
+    background-position: center;
+    padding: 8px;
+    color: white;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .burger{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu ul li a {
+        display: block;
+        border-bottom: 1px gray;
+        margin: 0;
+    }    
+    
+    #toggle:checked + .menu{
+        display: block;
+
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mapa{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
